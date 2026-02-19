@@ -8,7 +8,7 @@ interface BiZTEQLandingProps {
 
 export function BiZTEQLanding({ onGetStarted, onPreview }: BiZTEQLandingProps) {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div className="body min-h-screen bg-white overflow-hidden">
       <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <BiZTEQLogo size={36} showText={true} />
