@@ -36,7 +36,10 @@ function App() {
   };
 
   return (
-    <Dashboard userId={userId} refreshKey={refreshKey} onDataUpdate={handleDataUpdate} />
+    <>
+      <Dashboard userId={userId} refreshKey={refreshKey} onDataUpdate={handleDataUpdate} />
+      </>
+    
   );
 }
 
