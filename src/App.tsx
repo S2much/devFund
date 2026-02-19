@@ -25,8 +25,8 @@ function App() {
     }
   };
 
-  if (!showDashboard) {
-    return ;
+  if (showDashboard) {
+    return <Dashboard userId={userId} refreshKey={refreshKey} onDataUpdate={handleDataUpdate} />;
   }
 
   const userId = getMockUserId();
@@ -38,7 +38,6 @@ function App() {
   return (
     <div>
       <BiZTEQLanding onGetStarted={handleGetStarted} onPreview={handlePreview} />
-      <Dashboard userId={userId} refreshKey={refreshKey} onDataUpdate={handleDataUpdate} />
       </div>
     
   );
