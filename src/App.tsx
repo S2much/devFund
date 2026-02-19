@@ -36,10 +36,10 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <BiZTEQLanding onGetStarted={handleGetStarted} onPreview={handlePreview} />
       <Dashboard userId={userId} refreshKey={refreshKey} onDataUpdate={handleDataUpdate} />
-      </>
+      </div>
     
   );
 }
